@@ -1,0 +1,94 @@
+<div class="container">
+
+  <h2>Medicine List</h2>
+
+  <p>Total Medicines: {{medicines.length}}</p>
+  <!-- Search -->
+  <div class="search-box">
+
+    <input type="text"
+           [(ngModel)]="searchText"
+           placeholder="Search medicine name" />
+
+
+    <button (click)="search()">
+      Search
+    </button>
+
+
+    <button (click)="load()">
+      Refresh
+    </button>
+
+  </div>
+
+
+
+  <!-- Medicine Grid -->
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Medicine Name</th>
+        <th>Expiry Date</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Brand</th>
+        <th>Notes</th>
+      </tr>
+
+    </thead>
+
+
+
+    <tbody>
+
+      <tr *ngFor="let medicine of medicines"
+          [ngClass]="getRowClass(medicine)">
+
+        <td>
+          {{ medicine.fullName }}
+        </td>
+
+
+        <td>
+          {{ medicine.expiryDate | date:'dd-MM-yyyy' }}
+        </td>
+
+
+        <td>
+          {{ medicine.quantity }}
+        </td>
+
+
+        <td>
+          ${{ medicine.price | number:'1.2-2' }}
+        </td>
+
+
+        <td>
+          {{ medicine.brand }}
+        </td>
+        <td>
+          {{ medicine.notes }}
+        </td>
+
+
+      </tr>
+
+
+      <tr *ngIf="medicines.length === 0">
+
+        <td colspan="5">
+          No medicines found
+        </td>
+
+      </tr>
+
+
+    </tbody>
+
+  </table>
+
+</div>

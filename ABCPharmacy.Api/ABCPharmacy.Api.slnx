@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../abc-pharmacy-ui/abc-pharmacy-ui.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="ABCPharmacy.Api.csproj" />
+</Solution>

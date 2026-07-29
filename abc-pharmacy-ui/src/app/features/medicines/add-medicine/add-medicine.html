@@ -1,0 +1,148 @@
+<div>
+
+  <h2>
+    Add Medicine
+  </h2>
+
+
+  <form [formGroup]="form"
+        (ngSubmit)="save()">
+
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+
+      <tr>
+
+        <td>
+          <label>
+            Medicine Name
+          </label>
+        </td>
+
+        <td>
+          <input type="text"
+                 formControlName="fullName"
+                 placeholder="Enter medicine name">
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td>
+          <label>
+            Brand
+          </label>
+        </td>
+
+        <td>
+          <input type="text"
+                 formControlName="brand"
+                 placeholder="Enter brand name">
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td>
+          <label>
+            Notes
+          </label>
+        </td>
+
+        <td>
+          <textarea rows="4"
+                    cols="30"
+                    formControlName="notes"
+                    placeholder="Enter medicine notes">
+          </textarea>
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td>
+          <label>
+            Expiry Date
+          </label>
+        </td>
+
+        <td>
+          <input type="date"
+                 formControlName="expiryDate">
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td>
+          <label>
+            Quantity
+          </label>
+        </td>
+
+        <td>
+          <input type="number"
+                 formControlName="quantity"
+                 placeholder="Enter quantity">
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td>
+          <label>
+            Price
+          </label>
+        </td>
+
+        <td>
+          <input type="number"
+                 step="0.01"
+                 formControlName="price"
+                 placeholder="Enter price">
+        </td>
+
+      </tr>
+
+
+
+      <tr>
+
+        <td colspan="2" align="center">
+
+          <button type="submit">
+            Save Medicine
+          </button>
+
+          <button type="reset">
+            Clear
+          </button>
+
+        </td>
+
+      </tr>
+
+
+    </table>
+
+
+  </form>
+
+
+</div>

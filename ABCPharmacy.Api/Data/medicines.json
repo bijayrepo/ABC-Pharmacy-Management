@@ -1,0 +1,101 @@
+[
+  {
+    "Id": 1,
+    "FullName": "Paracetamol 500mg",
+    "Notes": "Used for fever and pain relief",
+    "ExpiryDate": "2027-05-15T00:00:00",
+    "Quantity": 97,
+    "Price": 25.50,
+    "Brand": "Crocin"
+  },
+  {
+    "Id": 2,
+    "FullName": "Amoxicillin 500mg",
+    "Notes": "Antibiotic",
+    "ExpiryDate": "2026-08-10T00:00:00",
+    "Quantity": 8,
+    "Price": 85.00,
+    "Brand": "Mox"
+  },
+  {
+    "Id": 3,
+    "FullName": "Ibuprofen 400mg",
+    "Notes": "Pain relief and anti-inflammatory",
+    "ExpiryDate": "2026-09-05T00:00:00",
+    "Quantity": 50,
+    "Price": 45.75,
+    "Brand": "Advil"
+  },
+  {
+    "Id": 4,
+    "FullName": "Cetirizine 10mg",
+    "Notes": "Allergy relief",
+    "ExpiryDate": "2026-08-20T00:00:00",
+    "Quantity": 5,
+    "Price": 35.25,
+    "Brand": "Zyrtec"
+  },
+  {
+    "Id": 5,
+    "FullName": "Pantoprazole 40mg",
+    "Notes": "Acidity treatment",
+    "ExpiryDate": "2027-02-12T00:00:00",
+    "Quantity": 60,
+    "Price": 95.00,
+    "Brand": "Pantocid"
+  },
+  {
+    "Id": 6,
+    "FullName": "Metformin 500mg",
+    "Notes": "Diabetes medication",
+    "ExpiryDate": "2026-08-18T00:00:00",
+    "Quantity": 120,
+    "Price": 65.50,
+    "Brand": "Glycomet"
+  },
+  {
+    "Id": 7,
+    "FullName": "Amlodipine 5mg",
+    "Notes": "Blood pressure medicine",
+    "ExpiryDate": "2027-06-01T00:00:00",
+    "Quantity": 75,
+    "Price": 40.00,
+    "Brand": "Amlokind"
+  },
+  {
+    "Id": 8,
+    "FullName": "Vitamin C 500mg",
+    "Notes": "Vitamin supplement",
+    "ExpiryDate": "2027-11-30T00:00:00",
+    "Quantity": 200,
+    "Price": 30.00,
+    "Brand": "Limcee"
+  },
+  {
+    "Id": 9,
+    "FullName": "ORS Sachet",
+    "Notes": "Rehydration solution",
+    "ExpiryDate": "2026-08-08T00:00:00",
+    "Quantity": 9,
+    "Price": 18.50,
+    "Brand": "Electral"
+  },
+  {
+    "Id": 10,
+    "FullName": "Cough Syrup 100ml",
+    "Notes": "Relief from dry cough",
+    "ExpiryDate": "2027-01-15T00:00:00",
+    "Quantity": 35,
+    "Price": 110.00,
+    "Brand": "Benadryl"
+  },
+  {
+    "Id": 11,
+    "FullName": "test",
+    "Notes": "Test",
+    "ExpiryDate": "2026-07-31T00:00:00",
+    "Quantity": 2,
+    "Price": 100,
+    "Brand": "ABC Test"
+  }
+]

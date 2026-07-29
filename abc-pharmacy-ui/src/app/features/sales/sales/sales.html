@@ -1,0 +1,103 @@
+<div>
+
+  <h2>
+    Sales History
+  </h2>
+
+
+  <table border="1" cellpadding="10" cellspacing="0">
+
+    <thead>
+
+      <tr>
+
+        <th>
+          Medicine
+        </th>
+
+        <th>
+          Quantity
+        </th>
+
+        <th>
+          Amount
+        </th>
+
+        <th>
+          Sale Date
+        </th>
+
+      </tr>
+
+    </thead>
+
+
+    <tbody>
+
+
+      <tr *ngFor="let sale of sales">
+
+
+        <td>
+          {{ sale.medicineName }}
+        </td>
+
+
+        <td>
+          {{ sale.quantitySold }}
+        </td>
+
+
+        <td>
+          ${{ sale.totalPrice | number:'1.2-2' }}
+        </td>
+
+
+        <td>
+          {{ sale.saleDate | date:'dd-MM-yyyy HH:mm' }}
+        </td>
+
+
+      </tr>
+
+
+
+      <tr *ngIf="sales.length === 0">
+
+        <td colspan="4">
+          No sales records available
+        </td>
+
+      </tr>
+
+
+    </tbody>
+
+
+  </table>
+
+
+</div>
+
+<h2>Sell Medicine</h2>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+
+  <select formControlName="medicineId">
+    <option *ngFor="let medicine of medicines" [value]="medicine.id">
+      {{ medicine.fullName }}
+    </option>
+  </select>
+
+  <input type="number"
+         formControlName="quantitySold">
+
+  <button type="submit">
+    Sell
+  </button>
+  
+
+</form>
+<button (click)="loadMedicines()">
+  Refresh
+</button>

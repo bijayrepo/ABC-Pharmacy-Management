@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 0,
+    "MedicineId": 0,
+    "MedicineName": "",
+    "QuantitySold": 0,
+    "TotalPrice": 0,
+    "SaleDate": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": 1,
+    "MedicineId": 1,
+    "MedicineName": "Paracetamol 500mg",
+    "QuantitySold": 2,
+    "TotalPrice": 51.00,
+    "SaleDate": "2026-07-29T14:16:39.5739431+00:00"
+  },
+  {
+    "Id": 2,
+    "MedicineId": 1,
+    "MedicineName": "Paracetamol 500mg",
+    "QuantitySold": 1,
+    "TotalPrice": 25.50,
+    "SaleDate": "2026-07-29T14:18:01.5991995+00:00"
+  },
+  {
+    "Id": 3,
+    "MedicineId": 11,
+    "MedicineName": "test",
+    "QuantitySold": 1,
+    "TotalPrice": 100,
+    "SaleDate": "2026-07-29T14:28:11.6591806+00:00"
+  }
+]
